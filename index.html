@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You ❤️</title>
+  <meta name="theme-color" content="#ff4d8d" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Confetti canvas sits on top when needed -->
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <div id="bgHearts" aria-hidden="true"></div>
+
+  <header class="hero">
+    <div class="hero__inner">
+      <h1>Hey you, heartbreaker</h1>
+      <p class="subtitle">
+        You've Got Mail
+      </p>
+
+      <button class="btn btn--primary" id="startBtn">
+        Open
+      </button>
+
+      <p class="hint">Careful, I am not a car, but after one test ride you will defenatly be satisfied and addicted</p>
+    </div>
+
+    <div class="hero__glow" aria-hidden="true"></div>
+  </header>
+
+  <main id="content" class="content" aria-hidden="true">
+    <section class="section section--intro reveal">
+      <h2>Our little timeline</h2>
+      <p>
+        A few moments I keep replaying in my head (and a few I’m excited to make next).
+      </p>
+    </section>
+
+    <!-- Timeline -->
+    <section class="timeline">
+      <!-- Card 1 -->
+      <article class="card reveal">
+        <img src="./content/img/first_date.png" alt="Us — memory 1" loading="lazy" />
+        <div class="card__body">
+          <div class="card__meta">Our First Date</div>
+          <h3>We dont speak about that day...</h3>
+          <p>both of us are to blame, but hey we all have to start somewhere</p>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card reveal">
+        <img src="./content/img/crazy.jpg" alt="Us — memory 2" loading="lazy" />
+        <div class="card__body">
+          <div class="card__meta">Sultan's Birthday</div>
+          <h3>So young and innocent, </h3>
+          <p>i was desperatly trying to impress you that day, admit it, it worked</p>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="card reveal">
+        <img src="./content/img/quirky.jpg" alt="Us — memory 3" loading="lazy" />
+        <div class="card__body">
+          <div class="card__meta">Random Saturday Jan 2023</div>
+          <h3> Cause we're quirky like that</h3>
+          <p> We got the vibes, we got the chamestry, we'd be good together frfr </p>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="card reveal">
+        <img src="./content/img/boom.jpg" alt="Us — memory 4" loading="lazy" />
+        <div class="card__body">
+          <div class="card__meta">Sanad's Grad dinner</div>
+          <h3>BOOM! the glowup is insane</h3>
+          <p> 2 Years later. DAMN, you're lookin like a snack and im feelin peckish  </p>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="card reveal">
+        <img src="./content/img/hot.jpg" alt="Us — memory 5" loading="lazy" />
+        <div class="card__body">
+          <div class="card__meta">Last Summer</div>
+          <h3>Next chapter</h3>
+          <p>You cant deny it, we would make a very hot couple</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- The question -->
+    <section class="section section--question reveal" id="question">
+      <h2>So what do you say  </h2>
+      <p class="big">
+        Will you be my mine for the day?
+      </p>
+
+      <div class="actions">
+        <button class="btn btn--primary" id="yesBtn">💖 Yes 💖</button>
+        <button class="btn btn--ghost" id="noBtn">no </button>
+      </div>
+
+      <div class="result" id="result" aria-live="polite"></div>
+    </section>
+
+    <footer class="footer">
+      <p>From yours truly</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
