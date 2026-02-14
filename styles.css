@@ -197,6 +197,7 @@ h1{
 }
 
 #noBtn .wa-emoji{
+  object-fit: contain;
   width: 28px;
   height: 28px;
   display: block;       /* centers better inside the button */
@@ -349,3 +350,4 @@ h1{
   .btn{ transition: none; }
   #confetti{ transition: none; }
 }
+
