@@ -243,7 +243,7 @@ noBtn.addEventListener("click", () => {
 
   // Turn into angry emoji after enough attempts
   if (noCount >= 8) {
-  const src = "./img/bird.jpeg";
+  const src = "./content/img/bird.jpeg";
   noBtn.innerHTML = `<img class="wa-emoji" src="${src}" alt="angry bird">`;
   noBtn.classList.add("angry");
 
@@ -347,3 +347,4 @@ window.addEventListener("resize", () => {
   window.addEventListener("resize", spawnHearts, { passive: true });
   window.addEventListener("scroll", onScroll, { passive: true });
 })();
+
